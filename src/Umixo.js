@@ -90,7 +90,7 @@ function Umixo() {
 		},
 	];
 	const { lastMessage } = useWebSocket(
-		"ws://192.46.211.58:60001/"
+		"wss://192.46.211.58:60001/"
 	);
 
 	const [ssps, setSSPS] = React.useState(-1);
