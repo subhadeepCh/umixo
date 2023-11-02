@@ -1,15 +1,283 @@
-.root{
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 80% 20%;
+.root {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("./images/background.jpg");
+	background-size: cover;
 }
 
-.questionContainer{
-  
+.sliderContainer {
+	width: 80%;
+	height: 4rem;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(11.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
 }
 
-.scoreSlider{
-  
+.optionContainer {
+	width: 40%;
+	height: 15.5rem;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(11.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.AgeGroup {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #351f0b;
+	border-radius: 0 0 0.8rem 0.8rem;
+	display: flex;
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: white;
+	padding-bottom: 0.1rem;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 2.2rem;
+	width: 13rem;
+}
+
+.filler {
+	width: 100%;
+	height: 3rem;
+}
+
+.SSC {
+	height: 80%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 1rem;
+	align-items: center;
+	border-radius: 0 2rem 2rem 0;
+	box-shadow: 1px 1px 1px #888888;
+	background-color: #da791e;
+	color: white;
+	font-weight: 500;
+}
+
+.slider {
+	width: 60%;
+	height: 90%;
+	position: relative;
+}
+
+.mithun {
+	position: absolute;
+	top: 0;
+	transition: left 0.8s ease;
+	width: 3.5rem;
+	height: 3.5rem;
+	border: 0.1rem solid black;
+	border-radius: 100%;
+	background-size: cover;
+	background-image: url("./images/mithunn.jpeg");
+}
+
+.PSC {
+	height: 80%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 1rem;
+	border-radius: 2rem 0 0 2rem;
+	box-shadow: 1px 1px 1px #888888;
+	background-color: #403c36;
+	color: white;
+	font-weight: 500;
+}
+
+.Options {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 2.2rem 2rem 0 2rem;
+	height: 70%;
+}
+.OptionA {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	height: 95%;
+	border-radius: 2rem;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(11.5px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+.OptionB {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	height: 95%;
+	border-radius: 2rem;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(11.5px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+}
+
+.button a {
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ffa12b;
+	display: block;
+	position: relative;
+	padding: 20px 40px;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-shadow: 0px 1px 0px #000;
+	filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+	-webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+	-moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+	box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.button a:active {
+	top: 10px;
+	background-color: #f78900;
+
+	-webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+	-moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
+	box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+}
+
+.button:after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+	position: absolute;
+	bottom: -15px;
+	left: -4px;
+	z-index: -1;
+	background-color: #2b1800;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.yesNoButtonContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mithunDP {
+	width: 10rem;
+	height: 10rem;
+	background-image: url("./images/mithunn.jpeg");
+	background-size: cover;
+	border-radius: 100%;
+	animation: slide-in 1s ease;
+}
+
+.mithunDP1{
+	width: 10rem;
+	height: 10rem;
+	background-image: url("./images/mithunn.jpeg");
+	background-size: cover;
+	border-radius: 100%;
+	animation: slide-in 1s ease;
+	margin-left: 2rem;
+}
+
+.textInputs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 95%;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.endgameScreen {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes slide-in {
+	from {
+		width: 0;
+		height: 0;
+	}
+	to {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+
+.textInputs {
+	font-style: italic;
+	font-family: cursive;
+	font-weight: 500;
+}
+
+
+.landingPage{
+	width: 40%;
+	height: 15.5rem;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9.5px);
+	-webkit-backdrop-filter: blur(11.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
 }
