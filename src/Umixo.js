@@ -146,6 +146,7 @@ function Umixo() {
 	const finalScore = 100 - (ssps / currentCount) * 10;
 	return (
 		<div className="root">
+			<div className="umixobadge" />
 			<div className="filler" />
 			{currentCount !== -1 ? (
 				<>

@@ -3,6 +3,7 @@
 	height: 100vh;
 	background-image: url("./images/background.jpg");
 	background-size: cover;
+	position: relative;
 }
 
 .sliderContainer {
@@ -219,7 +220,7 @@
 	animation: slide-in 1s ease;
 }
 
-.mithunDP1{
+.mithunDP1 {
 	width: 10rem;
 	height: 10rem;
 	background-image: url("./images/mithunn.jpeg");
@@ -265,8 +266,7 @@
 	font-weight: 500;
 }
 
-
-.landingPage{
+.landingPage {
 	width: 40%;
 	height: 15.5rem;
 	margin: 0 auto;
@@ -280,4 +280,16 @@
 	align-items: center;
 	box-sizing: border-box;
 	position: relative;
+}
+
+.umixobadge {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	background-image: url("./images/umixo.png");
+	background-size: cover;
+	border-radius: 5rem;
+	width: 13rem;
+	height: 5rem;
+	box-shadow: 1px 1px 0 #ffe5c4;
 }
